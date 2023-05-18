@@ -6,21 +6,21 @@
 /*   By: alnzohab <alnzohab@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 15:38:20 by alnzohab          #+#    #+#             */
-/*   Updated: 2023/05/16 17:57:35 by alnzohab         ###   ########.fr       */
+/*   Updated: 2023/05/17 15:21:24 by alnzohab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_hexaD(unsigned int n, int *len)
+void	ft_hexa_d(unsigned long n, int *len)
 {
-	int nbr;
+	unsigned long	nbr;
 
 	nbr = n;
 	if (nbr >= 16)
 	{
-		ft_hexaD(nbr / 16, len);
-		ft_hexaD(nbr % 16, len);
+		ft_hexa_d(nbr / 16, len);
+		ft_hexa_d(nbr % 16, len);
 	}
 	else if (nbr < 10)
 	{

@@ -6,7 +6,7 @@
 #    By: alnzohab <alnzohab@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/05 15:03:55 by alnzohab          #+#    #+#              #
-#    Updated: 2023/05/16 15:59:24 by alnzohab         ###   ########.fr        #
+#    Updated: 2023/05/17 11:38:34 by alnzohab         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ ft_putnbr_len.c \
 ft_putnbr_U_.c \
 ft_putstr_len.c \
 ft_printf.c \
+ft_printPtr.c \
 
 OBJS = $(SRCS:.c=.o)
 
